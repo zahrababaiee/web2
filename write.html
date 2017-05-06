@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" type="text/css" href="css/regstyles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/writeScript.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <img class="cover" src="photos/cover2.jpg">
+    <div class="topleft"> <img class="img-circle" src="photos/write.png"> </div>
+    <div class="topright">
+        <ul>
+           <li><a class="active" href="write.html">Share Post</a></li>
+           <li><a href="see.html">View Posts</a></li>
+        </ul>
+    </div>
+    <div class="center"><p style="font-size: 300%; padding: 5px; font-weight: bold;">Share a Post!</p>
+    </div>
+
+</div>
+
+<head>
+    <title>registration form</title>
+</head>
+
+<div class="form">
+<form action="Welcome.html" method="post">
+    <table class="tbl" border="0" align="center">
+        <tbody>
+
+        <tr>
+            <td><label for="title">Title: </label></td>
+            <td><input id="title" maxlength="100" name="title" type="text"/></td>
+        </tr>
+
+        <tr>
+            <td><label for="summary">Summary: </label></td>
+            <td><textarea id="summary" name="summary" cols="100" rows="8"></textarea></td>
+        </tr>
+
+        <tr>
+            <td><label for="txt">Text: </label></td>
+            <td><textarea class="txt" id="txt" name="txt" cols="100" rows="20"></textarea></td>
+        </tr>
+
+
+        <tr>
+            <td align="center"><button type="button" onclick="share()">Post</button></td>
+        </tr>
+
+        </tbody>
+    </table>
+</form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'brandon';
+  src:  url('Aladin-Regular.ttf') format('truetype');
+  font-style:normal;
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: 'josefin';
+  src:  url('JosefinSans-Regular.ttf') format('truetype');
+  font-style:normal;
+  font-weight:normal;
+}
+
+body {
+    background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgb(120,87,207);
+}
+
+.img-circle {
+    border-radius: 50%;
+    max-width: 100px;
+    height: auto;
+    position: relative;
+}
+
+.cover {
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.container {
+    position: relative;
+}
+
+.topleft {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+.topright {
+    position: absolute;
+    top: 12%;
+    right: 15%;
+    font-size: 22px;
+    font-family: brandon;
+    color: white;
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    font-family: brandon;
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 300px and max-height: 300px){
+    body {
+    background-color: red;
+}
+}
+
+.article{
+    font-family:josefin;
+    font-size: 22px;
+    text-align: justify;
+    width: 80%;
+    margin: 5 %;
+    margin-bottom: 0;
+    padding-bottom: 5%;
+    border-bottom: 1px solid;
+    border-color:rgb(195,195,195);
+}
+.heading{
+    font-family:josefin;
+    margin: 5%;
+}
+.image{
+   max-width: 39%;
+   float: right;
+   margin-left:2%;
+   margin-bottom:2%;
+}
+
+.writer {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+    margin: 0px;
+    margin-right: 5%;
+    margin-bottom: 6%;
+    float:left;
+}
+
+.details{
+    font-family:josefin;
+    margin-top: 0%;
+    margin: 12%;
+
+}
+
+.contact {
+    clear: left;
+    position: relative;
+    background-color: rgb(45, 75, 35);
+
+    margin-top: 40%;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.phone{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    height: 20%;
+}
+.gmail{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    height: 20%;
+}
+
+.teleg{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    height: 20%;
+}
+.insta{
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    height: 20%;
+}
+
+.info{
+   position: absolute;
+   top: 10%;
+   left: 10%;
+   font-family: josefin;
+   font-size: 20px;
+   color: white;
+}
+
+.info2{
+   position: absolute;
+   top: 55%;
+   left: 10%;
+   font-family: josefin;
+   font-size: 20px;
+   color: white;
+}
+
+.comment{
+   margin: 5%;
+   padding: 5%;
+    border-top: 1px solid;
+    border-color:rgb(195,195,195);
+}

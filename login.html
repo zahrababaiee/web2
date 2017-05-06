@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="css/regstyles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/logScript.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <img class="cover" src="photos/cover2.jpg">
+    <div class="topleft"> <img class="img-circle" src="photos/login.png"> </div>
+    <div class="topright">
+        <ul>
+           <li><a class="active" href="register.html">Registration</a></li>
+           <li><a href="login.html">login</a></li>
+        </ul>
+    </div>
+    <div class="center"><p style="font-size: 300%; padding: 5px; font-weight: bold;">Log In</p>
+    </div>
+
+</div>
+
+<head>
+    <title>registration form</title>
+</head>
+
+<div class="form">
+<form action="Welcome.html" method="post">
+    <table class="tbl" border="0" align="center">
+        <tbody>
+
+        <tr>
+            <td><label for="sid">Student ID: </label></td>
+            <td><input id="sid" maxlength="50" name="id" type="text"/></td>
+        </tr>
+
+        <tr>
+            <td><label for="pass">Password: </label></td>
+            <td><input id="pass" maxlength="50" name="pass" type="password"/></td>
+        </tr>
+
+
+        <tr>
+            <td align="center"><button type="button" onclick="send()">LogIn</button></td>
+        </tr>
+
+        </tbody>
+    </table>
+</form>
+    </div>
+</body>
+</html>

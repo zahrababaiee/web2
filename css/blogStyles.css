@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'brandon';
+  src:  url('Aladin-Regular.ttf') format('truetype');
+  font-style:normal;
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: 'josefin';
+  src:  url('JosefinSans-Regular.ttf') format('truetype');
+  font-style:normal;
+  font-weight:normal;
+}
+
+body {
+    background-color: rgb(231,218,239);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgb(120,87,207);
+}
+
+.img-circle {
+    border-radius: 50%;
+    max-width: 100px;
+    height: auto;
+    position: relative;
+}
+
+.cover {
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.container {
+    position: relative;
+}
+
+.topleft {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+.topright {
+    position: absolute;
+    top: 12%;
+    right: 15%;
+    font-size: 22px;
+    font-family: brandon;
+    color: white;
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    font-family: brandon;
+    color: white;
+}
+
+@media only screen and (max-width: 720px){
+    .center {
+        position: absolute;
+    left: 0;
+    top: 35%;
+    height:300px;
+    line-height: 28px;
+    text-align: center;
+    font-family: brandon;
+    color: white;
+    }
+}
+
+.pinterest {
+    -webkit-column-count: 3;
+	-webkit-column-gap: 10px;
+	-webkit-column-fill: auto;
+	-moz-column-count: 3;
+	-moz-column-gap: 10px;
+	-moz-column-fill: auto;
+	column-count: 3;
+	column-gap: 15px;
+	column-fill: auto;
+    width: 90%;
+    margin: 5%;
+}
+
+@media only screen and (max-width: 720px){
+    .pinterest {
+    -webkit-column-count: 1;
+	-webkit-column-gap: 10px;
+	-webkit-column-fill: auto;
+	-moz-column-count: 1;
+	-moz-column-gap: 10px;
+	-moz-column-fill: auto;
+	column-count: 1;
+	column-gap: 15px;
+	column-fill: auto;
+    width: 90%;
+    margin: 5%;
+    }
+}
+
+.post {
+   position: relative;
+   display: inline-block;
+   font-family: josefin;
+   font-size: 20px;
+   border: 2px solid #FAFAFA;
+   box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+
+   margin: 20px;
+   background-color: white;
+   text-align: justify;
+}
+
+.imgpost {
+   max-width : 90%;
+   max-height: auto;
+   margin-top: 5%;
+   margin: 5%;
+}
+
+.postp {
+   margin: 5%;
+}
+
+
+.writer {
+    border-radius: 50%;
+    width: 25%;
+    float: right;
+    margin: 5%;
+    margin-bottom:0;
+}
+
+.header{
+   font-size: 18px;
+   float: left;
+   margin-left: 8%;
+   }
+
+
+.post a{
+    color: rgb(89,89,213);
+    display: block;
+    text-align: justify;
+    text-decoration: none;
+}
+
+.post a:hover{
+    color: rgb(149,96,185);
+    font-decoration: bold;
+}
+
+.contact {
+    clear: left;
+    position: relative;
+    background-color: rgb(45, 75, 35);
+
+    margin-top: 40%;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.phone{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    height: 20%;
+}
+.gmail{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    height: 20%;
+}
+
+.teleg{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    height: 20%;
+}
+.insta{
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    height: 20%;
+}
+
+.info{
+   position: absolute;
+   top: 10%;
+   left: 10%;
+   font-family: josefin;
+   font-size: 20px;
+   color: white;
+}
+
+.info2{
+   position: absolute;
+   top: 55%;
+   left: 10%;
+   font-family: josefin;
+   font-size: 20px;
+   color: white;
+}

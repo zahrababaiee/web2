@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nowruz</title>
+    <link rel="stylesheet" type="text/css" href="css/poststyles.css" />
+    <script src="js/postScript.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <img class="cover" src = "photos/cover2.jpg">
+    <div class="topleft"> <img class="img-circle" src="photos/eid2.jpg"> </div>
+    <div class="topright">
+        <ul>
+           <li><a class="active" href="write.html">Share Post</a></li>
+           <li><a href="see.html">View Posts</a></li>
+        </ul>
+    </div>
+    <div class="center"><p id="title" style="font-size: 300%; padding: 5px; font-weight: bold;"> </p>
+    </div>
+
+</div>
+
+
+<center>
+
+    <h2 class="heading" id="header"></h2>
+    <p class="article" id="text">
+
+
+    </p>
+</center>
+<p class="details" id="aut"><img class="writer" src="photos/profilepic.jpg"> posted by Zahra Babiee </br></br></br> 1/10/2017</p>
+
+
+<div>
+
+</div>
+
+
+<div class="comment">
+<form action="Welcome.html" method="post">
+    <table class="tbl" border="0" align="center">
+        <tbody>
+
+        <tr>
+            <td><label for="cmnt">add a comment: </label></td>
+            <td><textarea id="cmnt" name="cmnt" cols="100" rows="3"></textarea></td>
+        </tr>
+
+
+        <tr>
+            <td align="center"><button type="button" onclick="send()">Send</button></td>
+        </tr>
+
+        </tbody>
+    </table>
+</form>
+    </div>
+
+<div class="comment">
+<form action="Welcome.html" method="post">
+    <table class="tbl" border="0" align="center">
+        <tbody>
+
+
+        <tr id="more1">
+            <td><label for="count">Please enter the count of comments you want to be displayed: </label></td>
+            <td><input id="count" type="number"/></td>
+        </tr>
+
+        <tr id="more2">
+            <td><label for="offset">Please enter the offset comment to be started from: </label></td>
+            <td><input id="offset" type="number"/></td>
+        </tr>
+
+        <tr>
+            <td align="center"><button type="button" onclick="multi()">submit</button></td>
+        </tr>
+
+
+        </tbody>
+    </table>
+</form>
+
+
+<div>
+    <table class="tbl" border="0" align="center">
+        <tbody id="main">
+
+
+        </tbody>
+    </table>
+</div>
+
+
+
+</body>
+</html>

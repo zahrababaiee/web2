@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'brandon';
+  src:  url('Aladin-Regular.ttf') format('truetype');
+  font-style:normal;
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: 'josefin';
+  src:  url('JosefinSans-Regular.ttf') format('truetype');
+  font-style:normal;
+  font-weight:normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: josefin;
+  font-size: 22px;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+
+.topright ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topright li {
+    float: left;
+}
+
+.topright li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topright li a:hover {
+    color: rgb(120,87,207);
+}
+
+.img-circle {
+    border-radius: 50%;
+    max-width: 100px;
+    height: auto;
+    position: relative;
+}
+
+.cover {
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.container {
+    position: relative;
+}
+
+.topleft {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+.topright {
+    position: absolute;
+    top: 12%;
+    right: 15%;
+    font-size: 22px;
+    font-family: brandon;
+    color: white;
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    font-family: brandon;
+    color: white;
+}
+
+@media only screen and (max-width: 720px){
+    .center {
+        position: absolute;
+    left: 0;
+    top: 35%;
+    height:300px;
+    line-height: 28px;
+    text-align: center;
+    font-family: brandon;
+    color: white;
+    }
+}
+
+
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: rgb(5,131,71);
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  border-radius: 15px;
+  background: rgb(19,82,145);
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent rgb(19,82,145) transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent rgb(19,82,145);
+}
+
+.poster {
+  max-width: 50%;
+  max-height: auto;
+
+}
+
+.firstphoto {
+  border-radius: 50%;
+}
+
+.h4 {
+  font-family: josefin;
+  font-size: 22px;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+  color: rgb(19,82,145);
+}
+
+.contact {
+    clear: left;
+    position: relative;
+    background-color: rgb(45, 75, 35);
+
+    margin-top: 40%;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.phone{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    height: 20%;
+}
+.gmail{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    height: 20%;
+}
+
+.teleg{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    height: 20%;
+}
+.insta{
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    height: 20%;
+}
+
+.info{
+   position: absolute;
+   top: 10%;
+   left: 10%;
+   font-family: josefin;
+   font-size: 20px;
+   color: white;
+}
+
+.info2{
+   position: absolute;
+   top: 55%;
+   left: 10%;
+   font-family: josefin;
+   font-size: 20px;
+   color: white;
+}

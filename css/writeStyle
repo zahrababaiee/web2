@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'brandon';
+  src:  url('Aladin-Regular.ttf') format('truetype');
+  font-style:normal;
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: 'josefin';
+  src:  url('JosefinSans-Regular.ttf') format('truetype');
+  font-style:normal;
+  font-weight:normal;
+}
+
+body {
+    background-color: rgb(231,218,239);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgb(120,87,207);
+}
+
+.img-circle {
+    border-radius: 50%;
+    max-width: 100px;
+    height: auto;
+    position: relative;
+}
+
+.cover {
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.container {
+    position: relative;
+}
+
+.topleft {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+.topright {
+    position: absolute;
+    top: 12%;
+    right: 15%;
+    font-size: 22px;
+    font-family: brandon;
+    color: white;
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    font-family: brandon;
+    color: white;
+}
+
+
+.form{
+   margin: 5%;
+   margin-bottom: 15%;
+   border: 2px solid white;
+   padding: 2%;
+}
+
