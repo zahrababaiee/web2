@@ -10,7 +10,7 @@ function multi() {
     data.append('count', document.getElementById("count").value);
     data.append('offset', document.getElementById("offset").value);
 
-    xhr.open('GET', 'https://ce419.herokuapp.com/blog/posts');
+    xhr.open('GET', 'http://127.0.0.1:8000/blog/1/posts/');
 
     xhr.onload = function () {
         var data = JSON.parse(xhr.responseText);
@@ -43,7 +43,7 @@ for(i = 0 ; i < posts.length ; i++) {
     c.src = "photos/eid2.jpg";
     var d = document.createElement('p');
     d.className = "postp";
-    d.innerHTML = data.summery + "... </br>";
+    d.innerHTML = data.summary + "... </br>";
     var l = document.createElement('a');
     l.href = "post.html"+ "?" + data.id;
     l.innerHTML = "Read more";

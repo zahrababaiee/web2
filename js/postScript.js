@@ -7,7 +7,7 @@ var comments;
 
     var data = new FormData();
 
-    xhr.open('GET', "https://ce419.herokuapp.com/blog/post"+ "?id=" + id);
+    xhr.open('GET', "http://127.0.0.1:8000/blog/1/post" + id +"/");
 
     xhr.onload = function () {
         var data = JSON.parse(xhr.responseText);
@@ -36,7 +36,7 @@ function send() {
     data.append('post_id', id);
     data.append('text', document.getElementById("cmnt").value);
 
-    xhr.open('POST', 'http://ce419.herokuapp.com/blog/comment');
+    xhr.open('POST', 'http://127.0.0.1:8000/blog/1/comment/');
 
     xhr.onload = function () {
         var data = JSON.parse(xhr.responseText);
@@ -58,7 +58,7 @@ function multi() {
     data.append('count', document.getElementById("count").value);
     data.append('offset', document.getElementById("offset").value);
 
-    xhr.open('GET', "https://ce419.herokuapp.com/blog/comments"+ "?post_id=" + id);
+    xhr.open('GET', "http://127.0.0.1:8000/blog/1/comments" + id + "/");
 
     xhr.onload = function () {
         var data = JSON.parse(xhr.responseText);

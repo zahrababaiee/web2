@@ -11,7 +11,7 @@ function share() {
     data.append('summary', document.getElementById("summary").value);
     data.append('text', document.getElementById("txt").value);
 
-    xhr.open('POST', 'http://ce419.herokuapp.com/blog/post');
+    xhr.open('POST', 'http://127.0.0.1:8000/blog/1/post/');
 
     xhr.onload = function () {
         var data = JSON.parse(xhr.responseText);
